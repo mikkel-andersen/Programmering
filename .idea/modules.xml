@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aflevering 1 - PlayDice/Aflevering 1 - PlayDice.iml" filepath="$PROJECT_DIR$/Aflevering 1 - PlayDice/Aflevering 1 - PlayDice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Frivillige Opgaver/Frivillige Opgaver.iml" filepath="$PROJECT_DIR$/Frivillige Opgaver/Frivillige Opgaver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L00 - Opgaver/L00 - Opgaver.iml" filepath="$PROJECT_DIR$/L00 - Opgaver/L00 - Opgaver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L01 - Opgaver/L01 - Opgaver.iml" filepath="$PROJECT_DIR$/L01 - Opgaver/L01 - Opgaver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L02 - Opgaver/L02 - Opgaver.iml" filepath="$PROJECT_DIR$/L02 - Opgaver/L02 - Opgaver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L03 - Opgaver/L03 - Opgaver.iml" filepath="$PROJECT_DIR$/L03 - Opgaver/L03 - Opgaver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L04 - Arrays/L04 - Arrays.iml" filepath="$PROJECT_DIR$/L04 - Arrays/L04 - Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L04 - Arrays2/L04 - Arrays2.iml" filepath="$PROJECT_DIR$/L04 - Arrays2/L04 - Arrays2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L06 - Klasser og Objekter/L06 - Klasser og Objekter.iml" filepath="$PROJECT_DIR$/L06 - Klasser og Objekter/L06 - Klasser og Objekter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L07 - Klasser og Objekter/L07 - Klasser og Objekter.iml" filepath="$PROJECT_DIR$/L07 - Klasser og Objekter/L07 - Klasser og Objekter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L08 - Opgaver/L08 - Opgaver.iml" filepath="$PROJECT_DIR$/L08 - Opgaver/L08 - Opgaver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programmering1.iml" filepath="$PROJECT_DIR$/Programmering1.iml" />
+    </modules>
+  </component>
+</project>
