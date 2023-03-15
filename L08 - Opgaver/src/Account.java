@@ -54,11 +54,13 @@ public class Account {
 
     public void withdraw(double amount) {
         this.balance -= amount;
-        System.out.println("Withdrawal made at: " + LocalDateTime.now());
+        lastTransaction = LocalDateTime.now();
+        System.out.println("Withdrawal made at: " + lastTransaction);
     }
 
     public void deposit(double amount) {
         this.balance += amount;
-        System.out.println("Deposit made at: " + LocalDateTime.now());
+        lastTransaction = LocalDateTime.now();
+        System.out.println("Deposit made at: " + lastTransaction);
     }
 }
