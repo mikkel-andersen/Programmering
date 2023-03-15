@@ -2,16 +2,14 @@ import java.util.Date;
 
 public class Account {
     private int id;
+    public static int nextId;
     private double balance;
     private double annualInterestRate;
     private Date dateCreated = new Date();
 
-    public Account() {
-
-    }
-
-    public Account(int id, double balance) {
-        this.id = id;
+    public Account(double balance) {
+        nextId++;
+        this.id = nextId;
         this.balance = balance;
     }
 
