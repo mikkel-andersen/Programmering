@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Account {
@@ -6,6 +8,7 @@ public class Account {
     private double balance;
     private double annualInterestRate;
     private Date dateCreated = new Date();
+    private LocalDateTime lastTransaction;
 
     public Account(double balance) {
         nextId++;
@@ -51,9 +54,11 @@ public class Account {
 
     public void withdraw(double amount) {
         this.balance -= amount;
+        System.out.println("Withdrawal made at: " + LocalDateTime.now());
     }
 
     public void deposit(double amount) {
         this.balance += amount;
+        System.out.println("Deposit made at: " + LocalDateTime.now());
     }
 }

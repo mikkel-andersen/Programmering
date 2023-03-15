@@ -6,6 +6,6 @@ public class Main {
         a1.deposit(3000);
         System.out.println(a1.getBalance());
         System.out.println(a1.getMonthlyInterest());
-        System.out.println(a1.getDateCreated());
+        System.out.println("Account created: " + a1.getDateCreated());
     }
 }
