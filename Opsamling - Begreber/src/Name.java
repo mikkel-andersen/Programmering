@@ -42,6 +42,22 @@ public class Name {
         }
     }
 
+    public String getInits() {
+
+        if (middleName != null) {
+            return firstName.substring(0, 1) + middleName.substring(0, 1) + lastName.substring(0, 1);
+        } else {
+            return firstName.substring(0, 1) + lastName.substring(0, 1);
+        }
+    }
+
+    public String getCryptoInits(int count) {
+        if(middleName != null) {
+            return null;
+        }
+        return null;
+    }
+
 
 
 
