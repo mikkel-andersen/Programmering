@@ -10,13 +10,16 @@ public class Ex4 {
         ArrayList<Integer> ints = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9));
         ArrayList<Integer> ints2 = new ArrayList<>(List.of(10, 4, 5, 3, 5, 3, 13));
 
+        ArrayList<Integer> ints3 = new ArrayList<>(List.of(2, 5, 8, 5));
+        ArrayList<Integer> ints4 = new ArrayList<>(List.of(2, 5, 8, 6));
+
         System.out.println(switchFirstAndLast(ints));
         System.out.println(replaceWithZero(ints));
         System.out.println(secondHighest(ints));
         System.out.println(ascendingOrder(ints2));
         System.out.println(shiftOne(ints2));
-        System.out.println(hasDoublets(ints));
-        System.out.println(hasDoublets(ints2));
+        System.out.println(hasDoublets(ints3));
+        System.out.println(hasDoublets(ints4));
 
     }
 
@@ -71,26 +74,13 @@ public class Ex4 {
     }
 
     public static boolean hasDoublets(ArrayList<Integer> ints) {
-        int count = 0;
-        boolean doublets = false;
-        for (int i = 0; i < ints.size() - 1; i++) {
-            if (count < 2) {
-                count = 0;
-            }
-            for (int j = 0; j < ints.size() - 1; j++) {
-                if (ints.get(i) == ints.get(j)) {
-                    count++;
-                }
-                if (count >= 2) {
-                    doublets = true;
-                    return doublets;
-                } else {
-                    return doublets;
+            for (int i = 0; i < ints.size(); i++) {
+                for (int j = i+1; j < ints.size(); j++) {
+                    if (ints.get(i) == ints.get(j)) {
+                        return true;
+                    }
                 }
             }
+            return false;
         }
-        return doublets;
     }
-
-}
-
