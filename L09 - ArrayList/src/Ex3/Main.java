@@ -4,7 +4,6 @@ package Ex3;
 public class Main {
 
     public static void main(String[] args) {
-
         Team t1 = new Team("A");
         Player p1 = new Player("Esben", 40);
         Player p2 = new Player("Kasper", 40);
