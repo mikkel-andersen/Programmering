@@ -18,8 +18,11 @@ public class Ex4 {
         System.out.println(secondHighest(ints));
         System.out.println(ascendingOrder(ints2));
         System.out.println(shiftOne(ints2));
-        System.out.println(hasDoublets(ints3));
-        System.out.println(hasDoublets(ints4));
+        System.out.println(ints3 + " " + hasDoublets(ints3));
+        System.out.println(ints4 + " " + hasDoublets(ints4));
+        System.out.println(ints + " " + hasDoublets(ints));
+        System.out.println(ints2 + " " + hasDoublets(ints2));
+
 
     }
 
