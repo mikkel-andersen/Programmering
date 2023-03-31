@@ -36,9 +36,9 @@ public class Ex4 {
     }
 
     public static ArrayList<Integer> replaceWithZero(ArrayList<Integer> ints) {
-        for (int i = 0; i < ints.size() - 1; i++) {
-            if (ints.get(i) % 2 == 0) {
-                ints.set(i, 0);
+        for (Integer i : ints) {
+            if (i % 2 == 0) {
+                ints.set(ints.indexOf(i), 0); // 50/50 om den virker, hvis der er flere ens tal.
             }
         }
         return ints;
@@ -46,7 +46,7 @@ public class Ex4 {
 
     public static int secondHighest(ArrayList<Integer> ints) {
         Collections.sort(ints);
-        return ints.get(7);
+        return ints.get(ints.size() - 2);
     }
 
     public static boolean ascendingOrder(ArrayList<Integer> ints) {
@@ -66,6 +66,7 @@ public class Ex4 {
     public static ArrayList<Integer> shiftOne(ArrayList<Integer> ints) {
         int temp;
         int last = ints.get(ints.size() - 1);
+
         for (int i = 0; i < ints.size() - 1; i++) {
             temp = ints.get(i);
             ints.set(i, temp);
@@ -78,7 +79,7 @@ public class Ex4 {
 
     public static boolean hasDoublets(ArrayList<Integer> ints) {
             for (int i = 0; i < ints.size(); i++) {
-                for (int j = i+1; j < ints.size(); j++) {
+                for (int j = i + 1; j < ints.size(); j++) {
                     if (ints.get(i) == ints.get(j)) {
                         return true;
                     }

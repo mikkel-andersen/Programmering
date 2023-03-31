@@ -14,7 +14,7 @@ public class Main {
         Player p7 = new Player("Bo", 20);
         Player p8 = new Player("Hans", 37);
         Player p9 = new Player("Alexander", 29);
-        Player p10 = new Player("Dommi", 28);
+        Player p10 = new Player("Domi", 28);
 
         t1.addPlayer(p1);
         t1.addPlayer(p2);
