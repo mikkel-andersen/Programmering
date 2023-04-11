@@ -49,10 +49,12 @@ public class GuiDemo03 extends Application {
     }
 
     private void calculate() {
-        int n = Integer.parseInt(txfInvestment.getText());
-        double x = Double.parseDouble(txfInterest.getText());
-        int y = Integer.parseInt(txfYears.getText());
-        double fV = (n * (x + 1)) * y;
-        txfFutureValue.setText(String.valueOf(fV));
+        double n = Double.parseDouble(txfInvestment.getText());
+        double x = Double.parseDouble(txfInterest.getText()) + 1;
+        double y = Double.parseDouble(txfYears.getText());
+        for (int i = 0; i < y; i++) {
+            n = n * x;
+        }
+        txfFutureValue.setText(String.valueOf(n));
     }
 }

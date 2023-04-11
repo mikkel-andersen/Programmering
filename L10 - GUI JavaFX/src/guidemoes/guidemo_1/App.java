@@ -1,9 +1,9 @@
-package guidemoes.guidemo_1;
+package excerxice3;
 
-import guidemoes.excerxice3.GuiDemo03;
+import guidemoes.guidemo_1.GuiDemo1;
 
 public class App {
 
     public static void main(String[] args) {
-        GuiDemo03.launch(GuiDemo03.class);
+        GuiDemo1.launch(GuiDemo1.class);
     }}
