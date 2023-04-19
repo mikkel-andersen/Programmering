@@ -17,9 +17,10 @@ public class TrainingPlan {
 		this.weeklyStrengthHours = weeklyStrengthHours;
 	}
 
-	public void createSwimmer(String name, int yearGroup, ArrayList<Double> laptimes, String club) {
+	public Swimmer createSwimmer(String name, int yearGroup, ArrayList<Double> laptimes, String club) {
 		Swimmer s = new Swimmer(name, yearGroup, laptimes, club);
 		swimmers.add(s);
+		return s;
 	}
 
 	public char getLevel() {
