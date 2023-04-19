@@ -62,4 +62,12 @@ public class Swimmer {
         }
         return best;
     }
+
+    @Override
+    public String toString() {
+        return
+                name + " fra " +
+                club + "'s bedste tid er " +
+                bestLapTime();
+    }
 }
