@@ -2,6 +2,7 @@ package application.controller;
 
 import application.model.Company;
 import application.model.Employee;
+import application.model.Customer;
 import storage.Storage;
 
 import java.util.ArrayList;
@@ -113,6 +114,20 @@ public class Controller {
 
     // -------------------------------------------------------------------------
 
+
+    public static Customer createCustomer(String name) {
+        Customer customer = new Customer(name);
+        Storage.addCustomer(customer);
+        return customer;
+    }
+
+    public static void addCustomerToCompany(Company company, Customer customer) {
+        company.addCustomer(customer);
+    }
+
+    public static void removeCustomerFromCompany(Company company, Customer customer) {
+        company.removeCustomer(customer);
+    }
 
 
 }
