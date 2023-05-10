@@ -27,7 +27,7 @@ public class Opgave3 {
     public static boolean sameNumber(int[] arr, int n) {
         boolean sameNumber = false;
         int i = 0;
-        int count = 0;
+        int count = 1;
         while (!sameNumber && i < arr.length - 1) {
             int k = arr[i];
             for (int j = i; j <= n; j++) {
