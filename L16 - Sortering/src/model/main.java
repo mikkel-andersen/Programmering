@@ -58,7 +58,6 @@ public class main {
                 if (customers.get(j).getFirstName().compareTo(customers.get(currentMinIndex).getFirstName()) < 0) {
                     currentMinIndex = j;
                 }
-
             }
             swapObject(customers, i, currentMinIndex);
         }
