@@ -16,12 +16,9 @@ public class Opgave3 {
             for (int i = list.size() - 1; i >= 0; i--) {
                 System.out.println(list.get(i));
             }
-
             scanner.close();
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
-
 }
